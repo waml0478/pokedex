@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pok&eacute;dex</title>
+        <link rel="shortcut icon" href="img/pokedex-icon.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="justify-content-center">
+            <h1>Pok&eacute;dex</h1>
+        </div>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.pokemon.com/es/episodios-pokemon" target="_blank" referrerpolicy="no-referrer">TV Pok&eacute;mon</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.pokemon.com/es/play-pokemon" target="_blank" referrerpolicy="no-referrer">Play! Pok&eacute;mon</a>
+            </li>
+        </ul>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h4>Listado Pok&eacute;mon</h4>                    
+                    <ul id="pokemon-list"></ul>
+                </div>
+                <div class="col-lg-4">          
+                        <h4>Detalles del Pok&eacute;mon</h4>
+                        <div id="pokemon-data"></div>
+                </div>
+                <div class="col-lg-4">
+                    <h4>Buscar Pok&eacute;mon por su ID o Nombre</h4>
+                    <form action="" onsubmit="buscarPokemon(event)">
+                        <input type="text" name="pokemon" autocomplete="off">
+                    </form>
+                    <div data-pokemon-card class="pokemon-card">
+                        <div data-pokemon-name>Pokedex</div>
+                        <div data-pokemon-img-container class="img-pokemon">
+                            <img data-pokemon-img class="pokemon-img" src="img/poke-shadow.png"/>
+                        </div>
+                        <div data-pokemon-id></div>
+                        <div data-pokemon-types class="pokemon-types"></div>
+                        <div data-pokemon-stats class="pokemon-stats"></div>
+                        <div data-pokemon-moves class="pokemon-moves"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="">
+                <a href="" target="_blank" rel="no-referrer" tabindex="0">Instagram</a>
+                <a href="" target="_blank" rel="no-referrer" tabindex="0">Facebook</a>
+                <a href="" target="_blank" rel="no-referrer" tabindex="0">Twitter</a>
+            </div>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/pokedex.js"></script>
+        <script src="js/pokemon.js"></script>
+    </body>
+</html>
